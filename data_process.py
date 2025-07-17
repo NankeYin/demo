@@ -153,24 +153,18 @@ def create_vector_store(terms_df):
     )
     splits = text_splitter.split_documents(documents)
 
-    # Initialize embedding model
+    # Initialize embedding model - FIXED PARAMETERS
     model_kwargs = {'device': device}
-    encode_kwargs = {
-        'batch_size': min(32, len(splits)),
-        'normalize_embeddings': True,
-        'show_progress_bar': True
-    }
 
     embedder = HuggingFaceEmbeddings(
         model_name="BAAI/bge-small-en-v1.5",
         model_kwargs=model_kwargs,
-        encode_kwargs=encode_kwargs
     )
 
     # Create FAISS vector store
     vectorstore = FAISS.from_documents(
         documents=splits,
-        embedding=embedder
+        embedding=embedder,
     )
 
     # Save vector store
