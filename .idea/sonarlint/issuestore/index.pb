@@ -27,3 +27,9 @@ C
 data/README.md,d\4\d49b8bf9aa35ef6fa8db2b1662ccfb55beac854e
 =
 data/test.csv,4\8\48a2cad71e89471a0e00ddd666cc260d910bf9ec
+O
+processed_data/full_dataset.csv,0\8\08bb8a2dcb3238f16af5aa4131acbebb983da6fd
+T
+$processed_data/category_mapping.json,9\a\9ad5b6ce9a27dfaa7e7f15914ef3cbd39fffc7ab
+M
+processed_data/bank_terms.csv,4\9\496e643bf94071b0e82c0cb26ee74b4035d24011
